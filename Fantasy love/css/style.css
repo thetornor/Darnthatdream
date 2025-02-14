@@ -1,0 +1,171 @@
+body {
+  font-size: 14px;
+  background: rgba(201, 195, 180, 1);
+  color: white;
+  font-family: Anaheim;
+  font-weight: Regular;
+  font-size: 25px;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+img{
+  opacity: 0.45;
+  position: fixed;
+  left: 12%;
+  top: 2%;
+  width: 70rem;
+  mix-blend-mode: difference;
+}
+.title {
+  width: 811px;
+  color: rgba(60,22,22,1);
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  font-family: Tempting;
+  font-weight: normal;
+  font-size: 150px;
+  text-align: left;
+}
+.subtitle {
+  color: rgba(60,22,22,1);
+  position: absolute;
+  bottom:-140%;
+  left: 30%;
+  font-family: Andale Mono;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+}
+
+.quote{
+  width: 20rem;
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
+.line1{
+  border-right: 2px solid white;
+  height: 16rem;
+  position: absolute;
+  top: 85%;
+  right: 55%;
+  rotate: 35deg;
+}
+.quote1{
+  width: 20rem;
+  position: absolute;
+  top: 115%;
+  left: 25%;
+}
+.line2{
+  border-right: 2px solid white;
+  height: 20rem;
+  position: absolute;
+  top: 115%;
+  right: 45%;
+  rotate: -50deg;
+}
+.quote2{
+  width: 20rem;
+  position: absolute;
+  top: 150%;
+  right: 20%;
+}
+.line3{
+  border-right: 2px solid white;
+  height: 17rem;
+  position: absolute;
+  top: 160%;
+  right: 40%;
+  rotate: 35deg;
+}
+.quote3{
+  width: 20rem;
+  position: absolute;
+  top: 190%;
+  left: 35%;
+}
+.quote4{
+  width: 20rem;
+  position: absolute;
+  top: 260%;
+  left: 20%;
+}
+.line4{
+  border-right: 2px solid white;
+  height: 19rem;
+  position: absolute;
+  top: 267%;
+  right: 50%;
+  rotate: -43deg;
+}
+.quote5{
+  width: 20rem;
+  position: absolute;
+  top: 300%;
+  left: 58%;
+}
+.line5{
+  border-right: 2px solid white;
+  height: 15rem;
+  position: absolute;
+  top: 320%;
+  right: 45%;
+  rotate: 33deg;
+}
+.quote6{
+  width: 20rem;
+  position: absolute;
+  top: 350%;
+  left: 40%;
+}
+.line6{
+  border-right: 2px solid white;
+  height: 15rem;
+  position: absolute;
+  top: 372%;
+  right: 35%;
+  rotate: -40deg;
+}
+.quote7{
+  width: 20rem;
+  position: absolute;
+  top: 400%;
+  left: 70%;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+span {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.smallScreenImage {
+  opacity: 0;
+}
+@media screen and (max-width: 440px) {
+
+  .smallScreenImage {
+    opacity: 1;
+    position: fixed;
+    left: 2%;
+  }
+
+  .largeScreenImage {
+    opacity: 0;
+  }
+}

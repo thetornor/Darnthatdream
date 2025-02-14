@@ -1,0 +1,102 @@
+body {
+  background-color: rgba(60, 22, 22, 1);
+  color: rgba(201, 195, 180, 1);
+  font-size: 50px;
+  margin: 6rem;
+  padding: 2rem;
+  font-family: Anaheim;
+  font-style: regular;
+}
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Tempting;
+  font-weight: normal;
+  text-align: right;
+  font-size: 150px;
+  display: block;
+  position: fixed;
+  top: 0; 
+  right: 1rem;
+  padding: 10px;
+  z-index: 100; 
+}
+
+.text{
+  text-align: left;
+  width: 50%;
+  opacity: 55%;
+}
+
+span{
+  display:none;
+  background-color: rgba(201, 195, 180, 1);
+  color: rgba(60, 22, 22, 1);
+  margin-left:50%;
+  font-size: 30px;
+  padding: 2%;
+  font-style: italic;
+}
+.text:hover{
+  opacity: 100%;
+  transition: 0.5s linear;
+}
+.text:hover~span{
+  display:block;
+  transition: 6s linear;
+  border-radius: 1rem;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.text {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+@media screen and (max-width: 2000px) {
+  body{
+    font-size: 14px;
+    }
+  h1{
+    font-size: 70px;
+    position: sticky;
+    text-align: center;
+  }
+  .text{
+    text-align: left;
+    width: 50%;
+    opacity: 100%;
+    font-size: 17px;
+  }
+  .description{
+    font-size: 14px;
+    font-weight: Regular;
+    color:rgba(201, 195, 180, 1);
+    background-color: rgba(60, 22, 22, 1);
+    opacity: 100%;
+    border-left: 2px solid rgba(201, 195, 180, 1);
+    display: block;
+    margin-left: 100px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+}
+
+
+
+
