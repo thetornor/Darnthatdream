@@ -7,21 +7,38 @@
         <title>Darn that Dream</title>
     </head>
     <body>
-
-    <div class="">
-        <img src="./images/desk-home.png" class="img">
-        <div class="text">
-            <p>Darn</p>
-            <p>That</p>
-            <p>Dream</p>
+        <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        
+        <div class="horizontally">
+          <h2>Darn that Dream</h2>
         </div>
-    
-        <span class="subtitle">Darn that dream</span>
-        <span class="info">
-            a beautiful ballad written by Jimmy Van Huesen and lyrics by Eddie DeLange during the 1939. The lyrics describe about a disappointed lover who is haunted by dreams of a love that feels real while asleep but disappears upon waking. It captures the pain of wanting something (or someone) that remains just out of reach: dream always seems so real but that it can’t come true.
-        </span>
-        <button href="https://thetornor.github.io/Darnthatdream/lyrics/" class="button1">---></button>
-     
+        <div class="vertically">
+        </div>
+        <div class="horizontally">
+            <h4>Darn that dream</h4>
+            <p>a beautiful ballad written by Jimmy Van Huesen and lyrics by Eddie DeLange during the 1939. The lyrics describe about a disappointed lover who is haunted by dreams of a love that feels real while asleep but disappears upon waking. It captures the pain of wanting something (or someone) that remains just out of reach: dream always seems so real but that it can’t come true.
+            </p>
+                <button href="https://thetornor.github.io/Darnthatdream/Swingin' Dream/" class="button1">---></button>
+        </div>
+
+        <script>
+gsap.registerPlugin(ScrollTrigger);
+
+const horizontally = gsap.utils.toArray(".horizontally");
+
+horizontally.forEach(element => {
+  gsap.to(element, {
+    xPercent: -50, 
+    ease: "none",
+    scrollTrigger: {
+      trigger: element,
+      pin: true,
+      scrub: 1,
+      end: () => "+=" + document.querySelector(".horizontally").offsetWidth
+    }
+  });
+});
+        </script>
     </body>
-    </div>
-        </html>
+</html>
