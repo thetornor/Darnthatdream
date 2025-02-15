@@ -26,6 +26,7 @@ h2{
     font-family: Tempting;
     font-weight: normal;
     font-size: 250px;
+    filter: blur(8px);color:  rgb(232, 225, 208);
 }
 p{
     width: 40rem;
@@ -48,7 +49,7 @@ button{
   margin: 4px 2px;
   transition-duration: 0.4s;
   position: absolute;
-  right: 25%;
+  right: 20%;
   top: 55%;
 
 }

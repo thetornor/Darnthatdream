@@ -1,4 +1,4 @@
-body {
+\body {
   font-size: 14px;
   background: rgba(201, 195, 180, 1);
   color: white;
@@ -16,9 +16,7 @@ img{
   position: fixed;
   left: 12%;
   top: 2%;
-  width: 70rem;
   mix-blend-mode: difference;
-  z-index: -1;
 }
 .title {
   width: 811px;
@@ -26,15 +24,10 @@ img{
   position: absolute;
   top: 4%;
   left: 4%;
-  font-family: Tempting;
+  font-family: "Tempting";
   font-weight: normal;
   font-size: 150px;
   text-align: left;
-  filter: blur(10px);
-}
-.title:hover{
-  filter: blur(0px);
-  transition: 0.4s;
 }
 .subtitle {
   color: rgba(60,22,22,1);
@@ -44,25 +37,27 @@ img{
   font-family: Andale Mono;
   font-weight: Regular;
   font-size: 40px;
-  opacity: 1;
+}
+
+.content {
+  position: relative;
+  top: 500px;
+  padding: 200px 0 200px 0;
 }
 
 .quote{
   width: 20rem;
   position: absolute;
   top: 70%;
-  left: 60%;
+  right: 30%;
 }
 .line1{
   border-right: 2px solid white;
-  height: 40%;
+  height: 16rem;
   position: absolute;
   top: 85%;
-  left: 55%;
-  rotate: 45deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  right: 55%;
+  rotate: 35deg;
 }
 .quote1{
   width: 20rem;
@@ -77,9 +72,6 @@ img{
   top: 115%;
   right: 45%;
   rotate: -50deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .quote2{
   width: 20rem;
@@ -94,9 +86,6 @@ img{
   top: 160%;
   right: 40%;
   rotate: 35deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .quote3{
   width: 20rem;
@@ -117,9 +106,6 @@ img{
   top: 267%;
   right: 50%;
   rotate: -43deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .quote5{
   width: 20rem;
@@ -134,9 +120,6 @@ img{
   top: 320%;
   right: 45%;
   rotate: 33deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .quote6{
   width: 20rem;
@@ -148,19 +131,18 @@ img{
   border-right: 2px solid white;
   height: 15rem;
   position: absolute;
-  top: 355%;
+  top: 372%;
   right: 35%;
-  rotate: -55deg;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  rotate: -40deg;
 }
 .quote7{
   width: 20rem;
   position: absolute;
   top: 400%;
+  padding-bottom: 500px;
   left: 70%;
 }
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -181,15 +163,14 @@ span {
 .smallScreenImage {
   opacity: 0;
 }
-@media screen and (max-width: 2000px) {
+
+@media screen and (max-width: 1500px) {
+  /* .img{
+  background: url("./mo.png") no-repeat center center / cover;
+  } */
 
   .smallScreenImage {
     opacity: 1;
-    position: fixed;
-    height: auto;
-    width: 110%;
-    left: 4%;
-    opacity: 0.45;
   }
 
   .largeScreenImage {
