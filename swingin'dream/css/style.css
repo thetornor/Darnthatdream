@@ -1,99 +1,140 @@
   body {
     width: 100%;
     height: auto;
-    background: rgba(201,195,180,1);
+    background: rgba(60, 22, 22, 1);
     font-size: 40px;
     font-family: Anaheim;
     font-weight: regular;   
     font-size: 25px;
     text-align: left;
     overflow-x: hidden;
+    color: black;
   }
-
+  a{
+    padding: 10px 25px;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    position: fixed;
+    right: 4%;
+    top: 50%;
+  }
+  .button1:hover{
+    background-color: rgba(201, 195, 180, 1);
+    color: rgba(60, 22, 22, 1);
+  }
+  .button1{
+    background-color: ;
+    color: rgba(201, 195, 180, 1);
+  }
   .color1 {
     width: 100%;
     height: 100%;
     background: rgba(160,105,53,0.8);
-    opacity: 1;
     position: absolute;
-    top: 3647px;
-    left: 484px;
+    top: 150%;
+    left: 50%;
     transform: rotate(-28deg);
     filter: blur(50rem);
+    opacity: 0;
+    transition: 1s linear;
   }
+  .color1:hover {
+    opacity: 1;
+    transition: 1s linear;
+  } 
   .color2 {
-    width: 592px;
-    height: 939px;
-    background-color: rgba(189, 204, 103, 1);
+    width: 40rem;
+    height: 60rem;
+    background-color: rgba(126,170,181,1);
     position: absolute;
-    top: 4952px;
-    left: 194px;
+    top: 280%;
+    left: 30%;
     border-radius: 50%;
-    transform: rotate(-49deg);
-    filter: blur(20rem);
+    rotate:-49deg;
+    filter: blur(40rem);
+    opacity: 0;
+    transition: 1s linear;
   }
+  .color2:hover {
+    opacity: 1;
+    transition: 1s linear;
+  } 
+  
   .color3 {
     width: 100%;
     height: 100%;
     background: rgba(160,105,53,1);
-    opacity: 1;
     position: absolute;
-    top: 34px;
-    left: 82px;
+    top: 10%;
+    left: 4%;
     border-top-left-radius: 145px;
     border-top-right-radius: 145px;
     border-bottom-left-radius: 145px;
     border-bottom-right-radius: 145px;
     filter: blur(50rem);
+    opacity: 0;
+    transition: 1s linear;
   }
-  .color4 {
-    width: 678px;
-    height: 100%;
-    background: rgba(126,170,181,1);
+  .color3:hover {
     opacity: 1;
-    position: absolute;
-    top: 3713px;
-    left: 18px;
-    border-radius: 50%;
-    filter: blur(10rem);
+    transition: 1s linear;
   }
   .color5 {
-    width: 483px;
+    width: 40rem;
     height: 658px;
     background: rgba(126,170,181,1);
-    opacity: 1;
     position: absolute;
-    top: 6px;
-    left: 901px;
+    top: 0%;
+    left: 0%;
     border-radius: 50%;
-    filter: blur(10rem);
+    filter: blur(15rem);
+    transition: 1s linear;
+    opacity: 0;
+  }
+  .color5:hover {
+    opacity: 1;
+    transition: 1s linear;
   }
   .color6 {
-    width: 414px;
-    height: 736px;
+    width: 50rem;
+    height: 25rem;
     background: rgba(189,204,103,1);
-    opacity: 1;
+    opacity: 0;
     position: absolute;
-    top: 2334px;
-    left: 874px;
+    top: 370%;
+    left: 1%;
     border-radius: 50%;
-    filter: blur(10rem);
+    filter: blur(40rem);
+    transition: 1s linear;
+  }
+  .color6:hover {
+    opacity: 1;
+    transition: 1s linear;
   }
   .color7 {
-    width: 484px;
-    height: 658px;
+    width: 45rem;
+    height: 20rem;
+    rotate: 30deg;
     background: rgba(189,204,103,1);
-    opacity: 1;
     position: absolute;
-    top: 839px;
-    left: 101px;
+    top: 140%;
+    left: 5%;
     border-radius: 50%;
-    filter: blur(10rem);
+    filter: blur(20rem);
+    opacity: 0;
+    transition: 1s linear;
   }
-
+  .color7:hover {
+    opacity: 1;
+    transition: 1s linear;
+  }
   .title {
     width: 743px;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 15%;
     left: 4%;
@@ -103,7 +144,6 @@
   }
   .intro {
     width: 30rem;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 60%;
     left: 50%;
@@ -111,7 +151,6 @@
   }
   .title1 {
     width: 919px;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 120%;
     left: 4%;
@@ -124,42 +163,23 @@
     position: absolute;
     top: 170%;
     left: 30%;
-    color: rgba(255,255,255,1);
-  }
-  .text1:hover{
-    color: rgba(255,255,255,1);
-    filter: blur(5px);
-    transition: 0.25s;
-
   }
   .text2{
     width: 25rem;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 200%;
     left: 60%;
   }
-  .text2:hover{
-    color: rgba(255,255,255,1);
-    filter: blur(5px);
-    transition: 0.25s;
-  }
   .text3 {
     width: 25rem;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 230%;
     left: 40%;
   
   }
-  .text3:hover{
-    color: rgba(255,255,255,1);
-    filter: blur(5px);
-    transition: 0.25s;
-  }
+
   .title2 {
     width: 100%;
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 250%;
     left: 4%;
@@ -167,7 +187,6 @@
     font-family: tempting;
   }
   .name1 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 300%;
     left: 70%;
@@ -178,7 +197,6 @@
   }
   
   .explain1 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 310%;
     left: 70%;
@@ -198,7 +216,6 @@
   }
  
   .name2 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 320%;
     left: 30%;
@@ -209,7 +226,6 @@
   }
   
   .explain2 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 330%;
     left: 30%;
@@ -228,7 +244,6 @@
     transition: 0.3s;
   }
   .name3 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 340%;
     left: 70%;
@@ -239,7 +254,6 @@
   }
   
   .explain3 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 350%;
     left: 70%;
@@ -259,7 +273,6 @@
   }
  
   .name4 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 360%;
     left: 30%;
@@ -270,7 +283,6 @@
   }
   
   .explain4 {
-    color: rgba(255,255,255,1);
     position: absolute;
     top: 370%;
     left: 30%;
