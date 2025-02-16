@@ -3,10 +3,54 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Tempting&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Anaheim&display=swap" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="./css/style.css" rel="stylesheet" />
         <title>Darn that Dream</title>
     </head>
     <body>
+      <nav>
+        <div class="logo">
+          <i class='bx bx-menu menu-icon'></i>
+          <span class="logo-name">Darn Dream</span>
+        </div>
+
+        <div class="sidebar">
+          <div class="logo">
+            <i class='bx bx-menu menu-icon'></i>
+            <span class="logo-name"></span>
+          </div>
+
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Lyrics</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Swingin' Dream</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Fantasy Love</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="overlay">
+
+      </section>
+
         <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
         
@@ -23,6 +67,20 @@
         </div>
 
         <script>
+          const navBar = document.querySelector("nav");
+  const menuBtns  = document.querySelectorAll(".menu-icon");
+  const overlay = document.querySelector(".overlay");
+
+  menuBtns.forEach(menuBtn => {
+    menuBtn.addEventListener("click", () => {
+      navBar.classList.toggle("open");
+    });
+  });
+
+  overlay.addEventListener("click", () => {
+    navBar.classList.remove("open");
+  });
+
 gsap.registerPlugin(ScrollTrigger);
 
 const horizontally = gsap.utils.toArray(".horizontally");

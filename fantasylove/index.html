@@ -4,10 +4,54 @@
         <link href="https://fonts.googleapis.com/css?family=Afacad&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Anaheim&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Tempting&display=swap" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="./css/style.css" rel="stylesheet" />
         <title>Love As Fantasy</title>
     </head>
     <body>
+        <nav>
+          <div class="logo">
+            <i class='bx bx-menu menu-icon'></i>
+            <span class="logo-name">Fantasy Love</span>
+          </div>
+
+          <div class="sidebar">
+            <div class="logo">
+              <i class='bx bx-menu menu-icon'></i>
+              <span class="logo-name"></span>
+            </div>
+
+            <div class="sidebar-content">
+              <ul class="lists">
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <span class="link">Home</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <span class="link">Lyrics</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <span class="link">Swingin' Dream</span>
+                  </a>
+                </li>
+                <li class="list">
+                  <a href="#" class="nav-link">
+                    <span class="link">Fantasy Love</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <section class="overlay">
+
+        </section>
+
         <h1 class="title">Love as</h1>
             <h1 class="title2">Fantasy</h1>
             <h2 class="subtitle">Shakespeare’s Theme</h2>
@@ -28,6 +72,24 @@
         <p class="quote6">It reflects the temporary, illusory nature of love, much like how Shakespeare’s characters experience love under the spell of the flower, only to realize it wasn’t real.</p>
         <div class="line6"></div>
         <p class="quote7">The dreamlike, melancholic mood of the song perfectly fits the surreal atmosphere of the play.</p> 
+
+</div>
+
+<script>
+  const navBar = document.querySelector("nav");
+  const menuBtns  = document.querySelectorAll(".menu-icon");
+  const overlay = document.querySelector(".overlay");
+
+  menuBtns.forEach(menuBtn => {
+    menuBtn.addEventListener("click", () => {
+      navBar.classList.toggle("open");
+    });
+  });
+
+  overlay.addEventListener("click", () => {
+    navBar.classList.remove("open");
+  });
+</script>
 
     </body>
 </html>

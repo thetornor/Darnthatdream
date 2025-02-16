@@ -4,10 +4,55 @@
         <link href="https://fonts.googleapis.com/css?family=Tempting&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Anaheim&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Afacad&display=swap" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="./css/style.css" rel="stylesheet" />
         <title>Swingin' the Dream</title>
     </head>
     <body>
+        <nav>
+            <div class="logo">
+              <i class='bx bx-menu menu-icon'></i>
+              <span class="logo-name">Swingin' Dream</span>
+            </div>
+  
+            <div class="sidebar">
+              <div class="logo">
+                <i class='bx bx-menu menu-icon'></i>
+                <span class="logo-name"></span>
+              </div>
+  
+              <div class="sidebar-content">
+                <ul class="lists">
+                  <li class="list">
+                    <a href="#" class="nav-link">
+                      <span class="link">Home</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#" class="nav-link">
+                      <span class="link">Lyrics</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#" class="nav-link">
+                      <span class="link">Swingin' Dream</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#" class="nav-link">
+                      <span class="link">Fantasy Love</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  
+          <section class="overlay">
+  
+          </section>
+
+          
         <a href="https://thetornor.github.io/Darnthatdream/fantasylove/" class="button1">---></a>
              <div id="color">
                 <div class="color1"></div>
@@ -38,7 +83,21 @@
             <span class="name4">Butterfly McQueen</span>
             <span class="explain4">known for Gone with the Wind, was also in the cast.</span>
 
-            <!-- <span class="text4">The idea of reinterpreting Shakespeare with jazz and modern influences has since been revisited in various productions.</span>
-            <span class="text5">Darn That Dream aligns beautifully with Swingin’ the Dream and Shakespeare’s theme that love is an illusion, a fantasy that can bring both joy and pain.</span> -->
+            <script>
+                const navBar = document.querySelector("nav");
+                const menuBtns  = document.querySelectorAll(".menu-icon");
+                const overlay = document.querySelector(".overlay");
+              
+                menuBtns.forEach(menuBtn => {
+                  menuBtn.addEventListener("click", () => {
+                    navBar.classList.toggle("open");
+                  });
+                });
+              
+                overlay.addEventListener("click", () => {
+                  navBar.classList.remove("open");
+                });
+              </script>
+
     </body>
 </html>
