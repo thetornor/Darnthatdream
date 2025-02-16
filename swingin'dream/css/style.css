@@ -3,12 +3,12 @@
     height: auto;
     background: rgba(60, 22, 22, 1);
     font-size: 40px;
-    font-family: Anaheim;
-    font-weight: regular;   
+    font-family: "Adobe Caslon Pro";
+    font-style: italic; 
     font-size: 25px;
     text-align: left;
     overflow-x: hidden;
-    color: black;
+    color: rgb(35, 9, 9);
   }
   a{
     padding: 10px 25px;
@@ -46,24 +46,7 @@
   .color1:hover {
     opacity: 1;
     transition: 1s linear;
-  } 
-  .color2 {
-    width: 40rem;
-    height: 60rem;
-    background-color: rgba(126,170,181,1);
-    position: absolute;
-    top: 280%;
-    left: 30%;
-    border-radius: 50%;
-    rotate:-49deg;
-    filter: blur(40rem);
-    opacity: 0;
-    transition: 1s linear;
-  }
-  .color2:hover {
-    opacity: 1;
-    transition: 1s linear;
-  } 
+  }  
   
   .color3 {
     width: 100%;
@@ -97,22 +80,6 @@
     opacity: 0;
   }
   .color5:hover {
-    opacity: 1;
-    transition: 1s linear;
-  }
-  .color6 {
-    width: 50rem;
-    height: 25rem;
-    background: rgba(189,204,103,1);
-    opacity: 0;
-    position: absolute;
-    top: 370%;
-    left: 1%;
-    border-radius: 50%;
-    filter: blur(40rem);
-    transition: 1s linear;
-  }
-  .color6:hover {
     opacity: 1;
     transition: 1s linear;
   }
@@ -186,6 +153,24 @@
     font-size: 150px;
     font-family: tempting;
   }
+  .color2 {
+    width: 40rem;
+    height: 60rem;
+    background-color: rgba(126,170,181,1);
+    position: absolute;
+    rotate: -45deg;
+    top: 240%;
+    left: 50%;
+    border-radius: 50%;
+    rotate: -49deg;
+    filter: blur(40rem);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .color2:hover{
+    opacity: 0.5;
+    transition: 2s;
+  }
   .name1 {
     position: absolute;
     top: 300%;
@@ -195,7 +180,6 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
-  
   .explain1 {
     position: absolute;
     top: 310%;
@@ -205,13 +189,13 @@
     transition: opacity 0.5s ease-in-out;
   }
   
-  .name1:hover {
+  .name1:hover{
     opacity: 0;
     transition: 0.3s;
   }
   
-  .name1:hover + .explain1 {
-    opacity: 1; 
+  .name1:hover ~ .explain1 {
+    opacity: 1;
     transition: 0.3s;
   }
  
@@ -243,6 +227,23 @@
     opacity: 1; 
     transition: 0.3s;
   }
+  .color4 {
+    width: 40rem;
+    height: 20rem;
+    background-color: rgba(189,204,103,1);
+    position: absolute;
+    top: 290%;
+    left: 10%;
+    border-radius: 50%;
+    rotate: -49deg;
+    filter: blur(40rem);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .color4:hover{
+    opacity: 1;
+    transition: 2s;
+  }
   .name3 {
     position: absolute;
     top: 340%;
@@ -271,7 +272,23 @@
     opacity: 1; 
     transition: 0.3s;
   }
- 
+  .color8 {
+    width: 40rem;
+    height: 60rem;
+    background-color: rgba(160,105,53,1);
+    position: absolute;
+    top: 300%;
+    left: 30%;
+    border-radius: 50%;
+    rotate: -49deg;
+    filter: blur(40rem);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .color8:hover{
+    opacity: 1;
+    transition: 2s;
+  }
   .name4 {
     position: absolute;
     top: 360%;
@@ -300,7 +317,24 @@
     opacity: 1; 
     transition: 0.3s;
   }
-  .hidden1{
+  .color9 {
+    width: 40rem;
+    height: 60rem;
+    background-color: rgba(201,195,180,1);
+    position: absolute;
+    top: 300%;
+    left: 0%;
+    border-radius: 50%;
+    rotate: -49deg;
+    filter: blur(40rem);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .color9:hover{
+    opacity: 0.6;
+    transition: 2s;
+  }
+  /* .hidden1{
     padding: 2rem;
     width: 2rem;
     height: 4rem;
@@ -363,7 +397,7 @@
   .hidden2:hover + .text5 {
     opacity: 1; 
     transition: 0.3s;
-  }
+  } */
   @media screen and (max-width: 440px) {
     body{
       font-size: 14px;

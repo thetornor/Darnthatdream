@@ -2,52 +2,60 @@ body {
   font-size: 14px;
   background: rgba(201, 195, 180, 1);
   color: white;
-  font-family: Anaheim;
-  font-weight: Regular;
+  font-family: "Adobe Caslon Pro";
+  font-style: italic;
   font-size: 25px;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-img{
-  opacity: 0.45;
-  position: fixed;
-  mix-blend-mode: difference;
-  filter: blur(5px);
-}
+  text-align: center;
+}    
 .title {
-  width: 811px;
   color: rgba(60,22,22,1);
   position: fixed;
-  top: 4%;
+  top: 40%;
   left: 4%;
   font-family: "Tempting";
   font-weight: normal;
   font-size: 100px;
   text-align: left;
 }
-
-.content {
-  position: relative;
-  top: 500px;
-  padding: 200px 0 200px 0;
+.title2 {
+  color: rgba(60,22,22,1);
+  position: fixed;
+  top: 40%;
+  right: 4%;
+  font-family: "Tempting";
+  font-weight: normal;
+  font-size: 100px;
+  text-align: right;
+}
+.subtitle{
+  color: rgba(60,22,22,1);
+  position: fixed;
+  top: 0%;
+  margin-left: 40%;
+  font-family: "Tempting";
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
 }
 
 .quote{
   width: 20rem;
   position: absolute;
-  top: 70%;
-  right: 30%;
+  top: 40%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line1{
   border-right: 2px solid white;
-  height: 30%;
+  height: 20%;
   position: absolute;
-  top: 84%;
-  right: 55%;
-  rotate: 35deg;
+  top: 55%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -55,16 +63,21 @@ img{
 .quote1{
   width: 20rem;
   position: absolute;
-  top: 115%;
-  left: 25%;
+  top: 75%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote1:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line2{
   border-right: 2px solid white;
-  height: 40%;
+  height: 10%;
   position: absolute;
-  top: 115%;
-  right: 45%;
-  rotate: -50deg;
+  top: 90%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -72,16 +85,21 @@ img{
 .quote2{
   width: 20rem;
   position: absolute;
-  top: 150%;
-  right: 20%;
+  top: 100%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote2:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line3{
   border-right: 2px solid white;
-  height: 30%;
+  height: 15%;
   position: absolute;
-  top: 160%;
-  right: 40%;
-  rotate: 35deg;
+  top: 115%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -89,22 +107,33 @@ img{
 .quote3{
   width: 20rem;
   position: absolute;
-  top: 190%;
-  left: 35%;
+  top: 130%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote3:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .quote4{
   width: 20rem;
   position: absolute;
-  top: 260%;
-  left: 20%;
+  top: 190%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote4:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line4{
   border-right: 2px solid white;
-  height: 40%;
+  height: 20%;
   position: absolute;
-  top: 265%;
-  right: 50%;
-  rotate: -43deg;
+  top: 205%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -112,16 +141,21 @@ img{
 .quote5{
   width: 20rem;
   position: absolute;
-  top: 300%;
-  left: 58%;
+  top: 225%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote5:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line5{
   border-right: 2px solid white;
-  height: 30%;
+  height: 10%;
   position: absolute;
-  top: 320%;
-  right: 45%;
-  rotate: 33deg;
+  top: 250%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -129,16 +163,21 @@ img{
 .quote6{
   width: 20rem;
   position: absolute;
-  top: 350%;
-  left: 40%;
+  top: 260%;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote6:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 .line6{
   border-right: 2px solid white;
-  height: 30%;
+  height: 20%;
   position: absolute;
-  top: 372%;
-  right: 35%;
-  rotate: -40deg;
+  top: 285%;
+  margin-left: 50%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -146,9 +185,15 @@ img{
 .quote7{
   width: 20rem;
   position: absolute;
-  top: 400%;
-  padding-bottom: 500px;
-  left: 70%;
+  top: 305%;
+  padding-bottom: 50rem;
+  margin-left: 40%;
+  transition: 0.5s linear;
+  filter: blur(0px);
+}
+.quote7:hover {
+  filter: blur(5px);
+  transition: 0.5s linear;
 }
 a{
   padding: 10px 25px;
@@ -171,7 +216,7 @@ a{
   background-color: rgba(60, 22, 22, 1);
   color: rgba(201, 195, 180, 1);
 }
-@keyframes appear {
+ @keyframes appear {
   from {
     opacity: 0;
     clip-path: inset(100% 100% 0 0);
@@ -180,30 +225,33 @@ a{
     opacity: 1;
     clip-path: inset(0 0 0 0);
   }
-}
+} 
 
-span {
+p {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
 }
 .largeScreenImage {
   position: fixed;
-  right: -5%;
+  right: 15%;
   top: 1%;
-}
+  opacity: 1;
+  opacity: 0.45;
+  mix-blend-mode: difference;
+  z-index: -10;
+  }
 .smallScreenImage {
   opacity: 0;
   position: fixed;
   top: 4%;
+  left: 10%;
   height: 100%;
   z-index: -1;
 }
 
 @media screen and (max-width: 1500px) {
-  /* .img{
-  background: url("./mo.png") no-repeat center center / cover;
-  } */
+
 
   .smallScreenImage {
     opacity: 0.45;

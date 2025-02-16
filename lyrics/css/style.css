@@ -4,8 +4,8 @@ body {
   font-size: 50px;
   margin: 6rem;
   padding: 2rem;
-  font-family: Anaheim;
-  font-style: regular;
+  font-family: "Adobe Caslon Pro";
+  font-style: italic; 
 }
 .wrapper {
   max-width: 80%;
@@ -28,7 +28,8 @@ h1 {
 .text{
   text-align: left;
   width: 50%;
-  opacity: 45%;
+  opacity: 35%;
+  transition: 0.2s linear;
 }
 
 span{
@@ -42,7 +43,7 @@ span{
 }
 .text:hover{
   opacity: 100%;
-  transition: 0.5s linear;
+  transition: 0.2s linear;
 }
 .text:hover~span{
   display:block;
