@@ -1,15 +1,10 @@
-/* html, body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  } */
 
   body {
     width: 200vh;
     background: rgba(201, 195, 180, 1);
   }
   
-  .backgroundPhone{
+  /* .backgroundPhone{
     display: none;
   }
   
@@ -37,6 +32,8 @@
     filter: blur(8px);
     color: rgb(232, 225, 208);
     margin: 50%;
+    align-self: flex-end;
+  padding-top: 100px;
   }
   .horizontally_info {
     width: 400vw;
@@ -62,7 +59,7 @@
     font-family: "adobe caslon pro";
     font-style: italic;
     font-size: 35px;
-  }
+  } */
   .button1 {
     background-color: rgba(201, 195, 180, 1);
     color: rgba(60, 22, 22, 1);

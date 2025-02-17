@@ -29,7 +29,8 @@ nav .logo {
 }
 
 .logo .menu-icon {
-  color: rgba(201, 195, 180, 1);
+  /* color: rgba(201, 195, 180, 1); */
+  color: #fff;
   font-size: 24px;
   margin-right: 14px;
   cursor: pointer;
@@ -140,7 +141,7 @@ nav.open ~ .overlay{
   gap: 1orem;
 }
 
-span{
+.description{
   display:none;
   background-color: rgba(201, 195, 180, 1);
   color: rgba(60, 22, 22, 1);
@@ -178,7 +179,7 @@ span{
   position: fixed;
   right: 4%;
   top: 50%;
-} */
+}
 
 
 @media screen and (max-width: 700px) {
