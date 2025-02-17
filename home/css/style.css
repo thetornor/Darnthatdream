@@ -137,7 +137,7 @@ html, body {
   background: rgba(201, 195, 180, 1);
 }
 h2{
-    font-family: Tempting;
+    font-family: 'Tempting', sans-serif;
     font-weight: normal;
     font-size: 250px;
     filter: blur(8px);color:  rgb(232, 225, 208);
