@@ -2,6 +2,7 @@
   body {
     width: 200vh;
     background: rgba(201, 195, 180, 1);
+    cursor: ('cursor.png'), auto;
   }
   
   /* .backgroundPhone{

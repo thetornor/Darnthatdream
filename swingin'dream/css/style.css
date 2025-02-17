@@ -55,6 +55,7 @@
     background: rgba(201, 195, 180, 1);
     box-shadow: 0 5 10px rgba(0,0,0,0.1);
     transition: all 0.5s ease;
+    cursor: ('cursor.png'), auto;
   }
   
   nav.open .sidebar{
