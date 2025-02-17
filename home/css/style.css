@@ -62,7 +62,9 @@
     font-style: italic;
     font-size: 35px;
   }
-  button {
+  .button1 {
+    background-color: rgba(201, 195, 180, 1);
+    color: rgba(60, 22, 22, 1);
     padding: 10px 25px;
     border-radius: 1.5rem;
     text-align: center;
@@ -74,10 +76,6 @@
     position: absolute;
     right: 35%;
     top: 55%;
-  }
-  .button1 {
-    background-color: rgba(201, 195, 180, 1);
-    color: rgba(60, 22, 22, 1);
   }
   .button1:hover {
     background-color: rgba(60, 22, 22, 1);
