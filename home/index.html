@@ -9,95 +9,53 @@
         <title>Darn that Dream</title>
     </head>
     <body>
-      <nav>
-        <div class="logo">
-          <i class='bx bx-menu menu-icon'></i>
-          <span class="logo-name">Darn Dream</span>
-        </div>
-
-        <div class="sidebar">
-          <div class="logo">
-            <i class='bx bx-menu menu-icon'></i>
-            <span class="logo-name"></span>
-          </div>
-
-          <div class="sidebar-content">
-            <ul class="lists">
-              <li class="list">
-                <a href="https://thetornor.github.io/Darnthatdream/home/" class="nav-link">
-                  <span class="link">Home</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="https://thetornor.github.io/Darnthatdream/lyrics/" class="nav-link">
-                  <span class="link">Lyrics</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <span class="https://thetornor.github.io/Darnthatdream/swingin'dream/">Swingin' Dream</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="https://thetornor.github.io/Darnthatdream/fantasylove/" class="nav-link">
-                  <span class="link">Fantasy Love</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section class="overlay">
-
-      </section>
-
         <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+        <img class="backgroundPhone" src="images/phone-home.png" />
+        <!-- <img class="backgroundDesktop" src="images/desk-home.png" /> -->
+        <div class="container">
+          <div class="horizontally_title">
+            <div class="title_0" id="darn">Darn</div>
+            <div class="title_1" id="that">That</div>
+            <div class="title_2" id="dream">Dream</div>
+          </div>
         
-        <div class="horizontally">
-          <h2>Darn that Dream</h2>
+          <div class="horizontally_info">
+            <div class="subtitle" id="subtitle">Darn that dream</div>
+            <div class="description" id="description">
+              a beautiful ballad written by Jimmy Van Huesen and lyrics by Eddie
+              DeLange during the 1939. The lyrics describe about a disappointed
+              lover who is haunted by dreams of a love that feels real while asleep
+              but disappears upon waking. It captures the pain of wanting something
+              (or someone) that remains just out of reach: dream always seems so
+              real but that it can’t come true.
+            </div>
+            <button href="https://thetornor.github.io/Darnthatdream/lyrics/" class="button1">---></button>
+          </div>
         </div>
-        <div class="vertically">
-        </div>
-        <div class="horizontally">
-            <h4>Darn that dream</h4>
-            <p>a beautiful ballad written by Jimmy Van Huesen and lyrics by Eddie DeLange during the 1939. The lyrics describe about a disappointed lover who is haunted by dreams of a love that feels real while asleep but disappears upon waking. It captures the pain of wanting something (or someone) that remains just out of reach: dream always seems so real but that it can’t come true.
-            </p>
-                <a href="https://thetornor.github.io/Darnthatdream/lyrics/" class="button1">---></a>
-        </div>
-
+    
         <script>
-          const navBar = document.querySelector("nav");
-  const menuBtns  = document.querySelectorAll(".menu-icon");
-  const overlay = document.querySelector(".overlay");
-
-  menuBtns.forEach(menuBtn => {
-    menuBtn.addEventListener("click", () => {
-      navBar.classList.toggle("open");
-    });
-  });
-
-  overlay.addEventListener("click", () => {
-    navBar.classList.remove("open");
-  });
-
-gsap.registerPlugin(ScrollTrigger);
-
-const horizontally = gsap.utils.toArray(".horizontally");
-
-horizontally.forEach(element => {
-  gsap.to(element, {
-    xPercent: -50, 
-    ease: "none",
-    scrollTrigger: {
-      trigger: element,
-      pin: true,
-      scrub: 1,
-      end: () => "+=" + document.querySelector(".horizontally").offsetWidth
-    }
-  });
-});
+    
+          if(screen.width > 440){
+          gsap.registerPlugin(ScrollTrigger);
+    
+          const horizontally = gsap.utils.toArray(".horizontally_title, .horizontally_info");
+    
+          horizontally.forEach((element) => {
+            gsap.to(element, {
+              xPercent: -50,
+              ease: "none",
+              scrollTrigger: {
+                trigger: element,
+                pin: true,
+                scrub: 1,
+                end: () =>
+                  "+=" + document.querySelector(".horizontally_info").offsetWidth,
+              },
+            });
+          });
+        }
         </script>
-    </body>
-</html>
+      </body>
+    </html>
