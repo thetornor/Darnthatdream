@@ -83,6 +83,64 @@
     color: rgba(201, 195, 180, 1);
   }
   
+  .horizontally {
+    width: 200vw; 
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: rgba(201, 195, 180, 1);
+    color: rgba(60, 22, 22, 1);
+  }
+  
+  .vertically {
+    padding: 1rem;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(201, 195, 180, 1);
+  }
+  h2{
+      font-family: 'Tempting',sans-serif;
+      font-weight: normal;
+      font-size: 250px;
+      filter: blur(8px);color:  rgb(232, 225, 208);
+  }
+  p{
+      width: 40rem;
+      font-family: 'adobe caslon pro';
+      font-style: italic;
+      font-size: 30px;
+      margin-left: 25%;
+  }
+  h4{
+      width: 4rem;
+      font-family: 'adobe caslon pro';
+      font-style: italic;
+      font-size: 35px;
+  }
+
+  .button1{
+    background-color: rgba(201, 195, 180, 1);
+    color: rgba(60, 22, 22, 1);
+    padding: 10px 25px;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 20%;
+    top: 55%;
+  }
+  .button1:hover{
+    background-color: rgba(60, 22, 22, 1);
+    color: rgba(201, 195, 180, 1);
+  }
   /* if mobile devices, use these styles */
   @media screen and (max-width: 700px) {
     body {

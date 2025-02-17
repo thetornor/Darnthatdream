@@ -12,9 +12,47 @@
         <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
+
+        <body>
+          <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+          <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+          <div class="horizontally">
+          <h2>Darn that Dream</h2>
+          </div>
+          <div class="vertically">
+          </div>
+          <div class="horizontally">
+              <h4>Darn that dream</h4>
+              <p>a beautiful ballad written by Jimmy Van Huesen and lyrics by Eddie DeLange during the 1939. The lyrics describe about a disappointed lover who is haunted by dreams of a love that feels real while asleep but disappears upon waking. It captures the pain of wanting something (or someone) that remains just out of reach: dream always seems so real but that it can’t come true.
+              </p>
+                  <a href="https://thetornor.github.io/Darnthatdream/lyrics/" class="button1">---></a>
+          </div>
+  
+          <script>
+  gsap.registerPlugin(ScrollTrigger);
+  
+  const horizontally = gsap.utils.toArray(".horizontally");
+  
+  horizontally.forEach(element => {
+    gsap.to(element, {
+      xPercent: -50, 
+      ease: "none",
+      scrollTrigger: {
+        trigger: element,
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + document.querySelector(".horizontally").offsetWidth
+      }
+    });
+  });
+          </script>
+
+
+
+
         <img class="backgroundPhone" src="images/phone-home.png" />
         <!-- <img class="backgroundDesktop" src="images/desk-home.png" /> -->
-        <div class="container">
+         <div class="container">
           <div class="horizontally_title">
             <div class="title_0" id="darn">Darn</div>
             <div class="title_1" id="that">That</div>
@@ -33,7 +71,7 @@
             </div>
             <a href="https://thetornor.github.io/Darnthatdream/lyrics/" class="button1">---></a>
           </div>
-        </div>
+        </div> 
     
         <script>
     
@@ -56,6 +94,6 @@
             });
           });
         }
-        </script>
+        </script> 
       </body>
     </html>
