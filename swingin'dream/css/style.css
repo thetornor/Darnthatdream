@@ -8,13 +8,10 @@
     font-size: 25px;
     text-align: left;
     overflow-x: hidden;
-    color: rgb(35, 9, 9);
+    color: rgb(30, 7, 7);
+    text-align: left;
   }
-  @font-face {
-    font-family: Tempting;
-    src: url(./fonts/Tempting\ -\ PERSONAL\ USE\ ONLY.ttf);
-  }
-  
+ 
   nav {
     position: fixed;
     top: 0;
@@ -446,73 +443,74 @@
     opacity: 0.6;
     transition: 2s;
   }
-  /* .hidden1{
-    padding: 2rem;
-    width: 2rem;
-    height: 4rem;
-    border-radius: 1rem;
-    background-color: rgba(255,255,255,1);
-    position: absolute;
-    top: 400%;
-    right: -3%;
-    opacity: 1;
-  }
- .text4 {
-    width: 30rem;
-    border-radius: 2rem;
-    padding: 1rem;
-    color: rgba(201,195,180,1);
-    background-color: rgba(255,255,255,1);
-    position: absolute;
-    top: 410%;
-    left: 45%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .hidden1:hover {
-    opacity: 0;
-    transition: 0.3s;
-  }
   
-  .hidden1:hover + .text4 {
-    opacity: 1; 
-    transition: 0.3s;
-  }
-  .hidden2{
-    padding: 2rem;
-    width: 2rem;
-    height: 4rem;
-    border-radius: 1rem;
-    background-color: rgba(255,255,255,1);
-    position: absolute;
-    top: 430%;
-    left: -3%;
-    opacity: 1;
-  }
-  .text5 {
-    width: 30rem;
-    border-radius: 2rem;
-    padding: 1rem;
-    color: rgba(201,195,180,1);
-    background-color: rgba(255,255,255,1);
-    position: absolute;
-    top: 420%;
-    left: 25%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .hidden2:hover {
-    opacity: 0;
-    transition: 0.3s;
-  }
-  
-  .hidden2:hover + .text5 {
-    opacity: 1; 
-    transition: 0.3s;
-  } */
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 2000px) {
     body{
-      font-size: 14px;
+      font-size: 20px;
     }
-
+  .color1{
+    opacity: 1;
+  }
+  .color2{
+    opacity: 1;
+  }
+  .color3{
+    opacity: 1;
+  }
+  .color4{
+    opacity: 1;
+  }
+  .color5{
+    opacity: 1;
+  }
+  .color7{
+    opacity: 1;
+  }
+  .color8{
+    opacity: 1;
+  }
+  .color9{
+    opacity: 1;
+  }
+  .name1{
+    position: absolute;
+    left: 35%;
+    top: ;
+  }
+  .name2{
+    position: absolute;
+    left: 35%;
+  }
+  .name3{
+    position: absolute;
+    left: 35%;
+  }
+  .name4{
+    position: absolute;
+    left: 35%;
+  }
+  .explain1{
+    position: absolute;
+    left: 50%;
+    top: 300%;
+    opacity: 1;
+  }
+  .explain2{
+    position: absolute;
+    left: 50%;
+    top: 320%;
+    opacity: 1;
+  }
+  .explain3{
+    position: absolute;
+    left: 50%;
+    top: 340%;
+    opacity: 1;
+  }
+  .explain4{
+    position: absolute;
+    left: 60%;
+    top: 360%;
+    opacity: 1;
+  }
   }

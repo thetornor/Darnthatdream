@@ -36,6 +36,7 @@
     font-size: 200px;
     filter: blur(8px);
     color: rgb(232, 225, 208);
+    margin: 50%;
   }
   .horizontally_info {
     width: 400vw;
@@ -83,7 +84,7 @@
   }
   
   /* if mobile devices, use these styles */
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 700px) {
     body {
       height: 200vh;
       width: 100%;
