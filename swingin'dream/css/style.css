@@ -479,6 +479,15 @@
     left: 35%;
     top: ;
   }
+  .title{
+    font-size: 40px;
+  }
+  .title1{
+    font-size: 40px;
+  }
+  .title2{
+    font-size: 40px;
+  }
   .name2{
     font-size: 20px;
     position: absolute;
